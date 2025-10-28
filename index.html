@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Keuangan Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Laporan Pengeluaran Per Kategori</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Tambah Pengeluaran</h2>
+      <form id="expenseForm">
+        <input type="text" id="category" placeholder="Kategori (misal: Makan, Transport, dll)" required>
+        <input type="number" id="amount" placeholder="Jumlah (Rp)" required>
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Daftar Pengeluaran</h2>
+      <ul id="expenseList"></ul>
+    </section>
+
+    <section class="chart-section">
+      <h2>Grafik Pengeluaran</h2>
+      <canvas id="barChart"></canvas>
+      <canvas id="pieChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Laporan Keuangan Sederhana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
